@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+*{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+body, button{
+    font-family: 'Cardo', serif;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+    justify-content: space-evenly;
+    background-color: #e6e9f0;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,0.1);
+}
+.navList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 50px;
+}
+.navList ul{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navList ul li{
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 4px solid transparent;
+    transition: 0.2s linear;
+}
+.navList ul li:hover{
+    border-bottom: 4px solid #431c5d;
+}
+.navList ul li a{
+    color: #431c5d;
+    font-weight: bolder;
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    font-family: 'Sacramento', cursive;
+}
+.logo h1{
+    color: #431c5d;
+    font-size: 35px;
+    font-weight: bolder;
+}
+.login{
+    display: flex; align-items: center;
+    justify-content: space-evenly;
+    width: 300px;
+}
+.button{
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    color: #431c5d;
+    font-weight: bolder;
+    border: 2px solid transparent;
+    border-radius: 100px;
+    transition: 0.2s linear;
+    font-size: 15px;
+}
+.but1{
+    background-color: white;
+    border: 2px solid #431c5d;
+}
+.but2{
+    background-color: #431c5d;
+    color: white;
+}
+.but1:hover{
+    background-color: rgba(0,0,0,0.01);
+}
+.but2:hover{
+    background-color: #431c5d80;
+    color: black;
+}
+.main{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(320deg, #e05915 50%, #e6e9f0 50%);
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.1);
+}
+.mainContent{
+    width: 1200px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(0, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("https://images.pexels.com/photos/2253839/pexels-photo-2253839.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.1);
+    animation: changeBackground 20s infinite;
+    animation-timing-function: linear;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+@keyframes changeBackground {
+    0%{background-image: linear-gradient(0, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("https://images.pexels.com/photos/2253839/pexels-photo-2253839.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");}
+    20%{background-image: linear-gradient(0, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("https://images.pexels.com/photos/912950/pexels-photo-912950.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");}
+    40%{background-image: linear-gradient(0, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("https://images.pexels.com/photos/2113855/pexels-photo-2113855.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");}
+    60%{background-image: linear-gradient(0, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("https://images.pexels.com/photos/4620873/pexels-photo-4620873.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");}
+    80%{background-image: linear-gradient(0, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("https://images.pexels.com/photos/4612135/pexels-photo-4612135.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");}
+    100%{background-image: linear-gradient(0, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("https://images.pexels.com/photos/5632334/pexels-photo-5632334.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");}
+}
+.btn{
+    width: 150px;
+    height: 50px;
+    border: 2px solid transparent;
+    background-color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-left: 10px;
+    color: #431c5d;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,0.1);
+    z-index: 900;
+    transition: 0.2s linear;
+}
+.btn2{
+    background-color: #e05915;
+    color: white;
+}
+.btn1:hover{
+    background-color: black;
+    color: white;
+}
+.btn2:hover{
+    background-color: black;
+}
+.deals{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 500px;
+    justify-content: space-evenly;
+    background: linear-gradient(28deg, #431c5d 50%, white 50%);
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+}
+.itemDetails{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+}
+.product{
+    width: 300px; height: 340px;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.2s linear;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+    margin: 10px 0 10px 0;
+}
+.product:hover{
+    transform: scale(1.05) translateY(-10px);
+}
+.details h2{
+    font-size: 15px;
+    color: #431c5d;
+}
+.image img{
+    width: 300px; height: 300px;
+}
+.discount h1{
+    font-size: 40px;
+}
+.footer{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e9f0;
+}
+.footer1 p{
+    font-size: 15px;
+    font-weight: bolder;
+}
+.footer2{
+    display: flex;
+    width: 200px;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.footer2 img{
+    width: 30px; height: 30px;
+}
+.footer2 img:hover{
+    transform: scale(1.1);
+}
+@media only screen and (max-width: 900px) {
+    .nav{
+        flex-direction: column;
+    }
+    .navList{
+        width: 100vw;
+    }
+    .login{
+        display: none;
+    }
+}

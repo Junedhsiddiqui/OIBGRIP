@@ -1,0 +1,50 @@
+body {
+	background: url(https://images.unsplash.com/photo-1448838520990-b0f959a7da46?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bc3c60c2f6f16221f0921b57a01f4679&auto=format&fit=crop&w=1489&q=80);
+	background-size: cover;
+	background-position: center;
+	color: white;
+	font-family: "Play";
+}
+
+label {
+	display: block;
+	font-size: 1.3em;
+}
+
+input {
+	text-align: center;
+	width: 120px;
+	font-size: 1.3em;
+}
+
+html {
+	height: 100%;
+}
+
+h1 {
+	font-size: 3.2em;
+	font-weight: 700;
+}
+
+a {
+	color: green;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+.shadow {
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+	 0px 8px 13px rgba(0,0,0,0.1),
+	 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+#me {
+	text-align: center;
+	font-size: 20px;
+	font-weight: 700;
+}
